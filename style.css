@@ -1,0 +1,11 @@
+#page_container {
+    width: 900px;
+    margin: 0 auto;
+}
+nav {
+    height:  100px;
+    background-color: #1B4965;
+    text-decoration: none;
+    color: #F8F1E5;
+    font-family: url(fonts/Crimson_Text/);
+}

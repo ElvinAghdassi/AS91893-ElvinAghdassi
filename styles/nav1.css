@@ -1,0 +1,53 @@
+@font-face {
+    font-family: crimsontext;
+    src: url(resources/fonts/Crimson_Text/);
+}
+#page_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    height:  100px;
+    background-color: #1B4965;
+    text-decoration: none;
+}
+
+ul {
+    width: 1200px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    
+}
+ul img {
+    width: 100px;
+    
+
+}
+
+li {
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+li a {
+    color: #F8F1E5;
+    font-family: crimsontext;
+    text-decoration: none;
+    padding: 1px;
+    font-size: 16pt;
+    font-weight: bold;
+
+}
+
+li a :hover {
+    text-decoration: underline;
+}
+
+#current {
+    border-bottom: 2px solid #F8F1E5;
+}

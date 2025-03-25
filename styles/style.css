@@ -1,0 +1,37 @@
+@font-face {
+    font-family: crimsontext;
+    src: url(resources/fonts/Crimson_Text/);
+}
+#page_container {
+    width: 900px;
+    margin: 0 auto;
+}
+nav {
+    height:  100px;
+    background-color: #1B4965;
+    text-decoration: none;
+}
+
+ul {
+    width: 900px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: #F8F1E5;
+    font-family: crimsontext;
+    text-decoration: none;
+}
+
+li a :hover {
+    text-decoration: underline;
+}

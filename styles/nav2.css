@@ -3,7 +3,7 @@
     src: url(resources/fonts/Crimson_Text/);
 }
 #page_container {
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
 }
 nav {
@@ -13,25 +13,40 @@ nav {
 }
 
 ul {
-    width: 900px;
+    width: 1200px;
     display: inline-block;
     list-style-type: none;
     margin: 0;
     text-align: center;
-    padding: 0;
     overflow: hidden;
+    
+}
+#logo img {
+    width: 100px;
+    position: fixed;
+    padding: 10px 0px 10px 50px;
 }
 
 li {
     display: inline-block;
+    padding: 40px;
+
 }
 
 li a {
     color: #F8F1E5;
     font-family: crimsontext;
     text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+
 }
 
-li a :hover {
-    text-decoration: underline;
+li a:hover {
+    color: #C89F74;
+    border-bottom: 2px solid #C89F74;
+}
+
+#current {
+    border-bottom: 2px solid #F8F1E5;
 }

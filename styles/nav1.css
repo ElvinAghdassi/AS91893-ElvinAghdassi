@@ -27,6 +27,10 @@ ul {
     padding: 10px 0px 10px 50px;
 }
 
+#logo img:hover {
+    scale: 105%;
+}
+
 li {
     display: inline-block;
     padding: 40px;
@@ -44,9 +48,11 @@ li a {
 
 li a:hover {
     color: #C89F74;
-    border-bottom: 2px solid #C89F74;
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
 }
 
 #current {
-    border-bottom: 2px solid #F8F1E5;
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
 }

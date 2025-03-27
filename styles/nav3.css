@@ -24,6 +24,13 @@ ul {
 }
 header {
     background-color: #1B4965;
+    height: 175px;
+}
+header h1{
+    color: #F8F1E5;
+    font-family: crimsontext;
+    text-align: center;
+    background-color: #1B4965;
 }
 #logo img {
     padding-top: 10px;

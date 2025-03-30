@@ -19,12 +19,13 @@ ul {
     margin: 0;
     text-align: center;
     overflow: hidden;
+    padding-left: 80px;
     
 }
 #logo img {
     width: 100px;
     position: fixed;
-    padding: 10px 0px 10px 50px;
+    padding: 15px 0px 10px 120px;
 }
 
 #logo img:hover {
@@ -41,8 +42,9 @@ li a {
     color: #F8F1E5;
     font-family: crimsontext;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: bold;
+    padding-left: 50px;
 
 }
 

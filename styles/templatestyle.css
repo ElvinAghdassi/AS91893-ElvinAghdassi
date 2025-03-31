@@ -1,0 +1,95 @@
+@font-face {
+    font-family: crimsontext;
+    src: url(resources/fonts/Crimson_Text/);
+}
+#page_container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #F1EAE0;
+    font-family: crimsontext;
+}
+nav {
+    height:  100px;
+    background-color: #1B4965;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 1200px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 80px;
+    
+}
+#logo img {
+    width: 100px;
+    position: fixed;
+    padding: 15px 0px 10px 165px;
+}
+
+#logo img:hover {
+    scale: 105%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 40px;
+
+}
+
+nav ul li a {
+    color: #F8F1E5;
+    font-family: crimsontext;
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-left: 50px;
+
+}
+
+nav ul li a:hover {
+    color: #C89F74;
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
+}
+
+#current {
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
+}
+section{
+    height: 300px;
+}
+footer{
+    background-color: #1B4965;
+    height: 200px;
+    color: #F8F1E5 ;
+}
+#footer_logo{
+    float: left;
+}
+#footer_logo img {
+    width: 200px;
+}
+#navigation{
+    float: left;
+}
+#navigation ul {
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+}
+#navigation ul li a {
+    color: #F8F1E5;
+    font-family: crimsontext;
+    text-decoration: none;
+    font-size: 18pt;
+    padding-left: 50px;
+}
+#contact{
+    float: left;
+}
+

@@ -8,13 +8,31 @@
     background-color: #F1EAE0;
     font-family: crimsontext;
 }
+
+#logo {
+    float: left;
+    width: 130px;
+    padding-left: 75px;
+    padding-top: 10px;
+}
+
+#logo img {
+    width: 130px
+}
+
 nav {
-    height:  100px;
+    /*height:  100px;*/
     background-color: #1B4965;
     text-decoration: none;
 }
 
 nav ul {
+    padding-left: 372px;
+}
+
+/*
+nav ul {
+    padding-left: 200px;
     width: 1200px;
     display: inline-block;
     list-style-type: none;
@@ -22,13 +40,14 @@ nav ul {
     text-align: center;
     overflow: hidden;
     padding-left: 80px;
+}*/
     
-}
+
+/*
 #logo img {
     width: 100px;
-    position: fixed;
     padding: 15px 0px 10px 165px;
-}
+}*/
 
 #logo img:hover {
     scale: 105%;
@@ -60,36 +79,56 @@ nav ul li a:hover {
     text-decoration: 2px underline;
     text-underline-offset: 3px;
 }
+
 section{
     height: 300px;
 }
+
 footer{
     background-color: #1B4965;
     height: 200px;
     color: #F8F1E5 ;
 }
+
 #footer_logo{
     float: left;
+    padding: 25px 0px 0px 50px;
 }
+
 #footer_logo img {
     width: 200px;
 }
+
 #navigation{
     float: left;
+    padding-left: 200px;
 }
+
 #navigation ul {
-    text-decoration: none;
     list-style-type: none;
     overflow: hidden;
 }
-#navigation ul li a {
+
+#navigation li a {
     color: #F8F1E5;
     font-family: crimsontext;
-    text-decoration: none;
     font-size: 18pt;
-    padding-left: 50px;
+    text-decoration: none;
 }
+#navigation li a:hover {
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
+}
+
 #contact{
     float: left;
+    padding-left: 150px;
+    text-align: center;
+}
+
+#contact ul{
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
 }
 

@@ -92,11 +92,15 @@ footer{
 
 #footer_logo{
     float: left;
-    padding: 25px 0px 0px 50px;
+    padding: 32px 0px 0px 50px;
 }
 
 #footer_logo img {
     width: 200px;
+}
+
+#footer_logo img:hover{
+    scale: 105%;
 }
 
 #navigation{

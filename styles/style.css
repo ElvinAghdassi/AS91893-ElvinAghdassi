@@ -87,7 +87,65 @@ padding-top: 50px
     margin-bottom: 0;
 }
 
-/* Styling for About Us Reader*/
+/* Styling for About Us Section*/
+
+#about_us {
+    text-align: center;
+    background-image: linear-gradient(#5FA8D3, #F1EAE0);
+    width: 650px;
+    height: 500px;
+    margin: 75px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+#about_us h1{
+    font-size: 22pt;
+    margin-bottom: 20px;
+    
+}
+
+#about_us p{
+    font-size: 18pt;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+/* Styling for the Cover image section */
+#cover_section {
+    margin: 50px auto;
+    height: 600px;
+}
+.cover_image {
+    width: 200px;
+}
+
+#orakei_wharf {
+    float: left;
+    background-color: #D6E6F2;
+    margin-left: 250px;
+    width: 300px;
+}
+#waiheke_island {
+    float: left;
+    background-color: #D6E6F2;
+    margin-right: 250px;
+    width: 300px;
+}
+
+#murrays_bay {
+    float: left;
+    background-color: #D6E6F2;
+    margin-left: 250px;
+}
+
+#auckland_harbour {
+    float: left;
+    background-color: #D6E6F2;
+}
+
 
 
 /* Styling for the footer */

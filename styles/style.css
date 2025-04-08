@@ -73,21 +73,23 @@ nav ul li a:hover {
 
 /* Styling for the Banner section*/
 #index_banner_block{
-    width: 1200px;
     height: 683px;
-    background: black url(/resources/images/indexbannerimg.jpg) no-repeat center;
-    background-size: cover;
-    background-color: black;
+    /*background: black url(/resources/images/indexbannerimg.jpg) no-repeat center;*/
+    /*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0.5)) url(/resources/images/indexbannerimg.jpg) no-repeat center;
+    background-size: cover;*/
+    /*background
+    -color: black;*/    
     color: #F1EAE0;
     margin-top: -20px;
     font-family: crimsontext;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2.6px;
-}
+    filter: brightness(50%);
+    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2.6px;*/
 
+}
 #index_banner{
     text-align: center;
     margin-left: -800px;
-    padding-top: 50px
+    padding-top: 50px;
 }
 
 #index_banner h1{
@@ -250,36 +252,68 @@ nav ul li a:hover {
     height: 3000px;
 }
 
+.desc_header{
+    color: #1B4965;
+    font-size: 24pt;
+    margin-top: 0px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.description{
+    width: 250px;
+    margin: -10px auto;
+}
+
+.findonmap_button{
+    border: none;
+    background-color: #0077B6;
+    color: #F8F1E5;
+    font-size: 18pt;
+    border-radius: 5px;
+    font-family: hanken_grotesk;
+    padding: 2px 5px 2px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+    margin-top: 25px;
+}
+
+.findonmap_button:hover{
+    text-decoration: underline;
+    scale: 105%;
+}
+
 #orakei_box{
     float: left;
     background-color: #D6E6F2;
-    margin-left: 250px;
+    margin-left: 200px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    margin-top: 75px;
 }
 #waiheke_box{
     float: left;
     background-color: #D6E6F2;
     text-align: center;
     width: 300px;
-    margin: 75px 0px 50px 250px;
+    margin: 75px 0px 50px 200px;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
 
 #murrays_box{
     float: left;
     background-color: #D6E6F2;
-    margin-left: 250px;
+    margin-left: 200px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    margin-top: 75px;
 }
 
 #auckland_box{
@@ -287,21 +321,22 @@ nav ul li a:hover {
     background-color: #D6E6F2;
     text-align: center;
     width: 300px;
-    margin: 75px 0px 50px 250px;
+    margin: 75px 0px 50px 200px;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
 
 #devonport_box{
     float: left;
     background-color: #D6E6F2;
-    margin-left: 250px;
+    margin-left: 200px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    margin-top: 75px;
 }
 
 #birkenhead_box{
@@ -309,21 +344,22 @@ nav ul li a:hover {
     background-color: #D6E6F2;
     text-align: center;
     width: 300px;
-    margin: 75px 0px 50px 250px;
+    margin: 75px 0px 50px 200px;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
 
 #point_england_box{
     float: left;
     background-color: #D6E6F2;
-    margin-left: 250px;
+    margin-left: 200px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    margin-top: 75px;
 }
 
 #mangere_box{
@@ -331,9 +367,9 @@ nav ul li a:hover {
     background-color: #D6E6F2;
     text-align: center;
     width: 300px;
-    margin: 75px 0px 50px 250px;
+    margin: 75px 0px 50px 200px;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
 

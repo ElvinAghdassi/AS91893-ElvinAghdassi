@@ -391,7 +391,86 @@ nav ul li a:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
 
+/* Styling for the Map Page */
 
+#map{
+    margin-top: -16px;
+}
+#map img{
+    width: 1200px;
+}
+#locations_banner_block{
+    width: 1200px;
+    background-color: black;
+    color: #FFE5B4;
+    margin-top: -20px;
+    font-family: crimsontext;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2.6px;
+    height: 690px;
+}
+
+
+#map_banner{
+    z-index: 1;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px ;
+    font-family: crimsontext;
+}
+
+#map_banner h1{
+    background-color: #1b4965bb;
+    font-size: 24pt;
+    color: #C89F74;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/* Styling for the pinpoints on the map*/
+
+#pinpoints img{
+    width: 20px;
+    z-index: 1;
+}
+
+#murrays_marker{
+    position: absolute;
+    margin-top: -870px;
+    margin-left: 550px ;
+}
+
+#birkenhead_marker{
+    position: absolute;
+    margin-top: -665px;
+    margin-left: 520px;
+}
+
+#devonport_marker{
+
+}
+
+#harbour_marker{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -630px;
+}
+
+#waiheke_marker{
+
+}
+
+#orakei_marker{
+
+}
+
+#point_england_marker{
+
+}
+
+#mangere_marker{
+
+}
 /* Styling for the footer */
 footer{
     background-color: #1B4965;

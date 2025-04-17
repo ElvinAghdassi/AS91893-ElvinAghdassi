@@ -435,41 +435,52 @@ nav ul li a:hover {
 }
 
 #murrays_marker{
-    position: absolute;
-    margin-top: -870px;
-    margin-left: 550px ;
+    position: relative;
+    top: -820px;
+    left: 555px ;
 }
 
 #birkenhead_marker{
-    position: absolute;
-    margin-top: -665px;
-    margin-left: 520px;
+    position: relative;
+    top: -655px;
+    left: 500px;
 }
 
 #devonport_marker{
-
+    position: relative;
+    top: -650px;
+    left: 625px;
 }
 
 #harbour_marker{
-    position: absolute;
-    margin-left: 500px;
-    margin-top: -630px;
+    position: relative;
+    left: 455px;
+    top: -620px;
 }
 
 #waiheke_marker{
+    position: relative;
+    top: -610px;
+    left: 960px;
 
 }
 
 #orakei_marker{
-
+    position: relative;
+    left: 540px;
+    top: -610px;
 }
 
 #point_england_marker{
-
+    position: relative;
+    left: 738px;
+    top: -745px; 
 }
 
 #mangere_marker{
-
+    position: relative;
+    left: 700px;
+    top: -850px;
 }
 /* Styling for the footer */
 footer{

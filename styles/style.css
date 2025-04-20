@@ -132,6 +132,10 @@ nav ul li a:hover {
     margin-bottom: 20px;
     margin: auto;
     font-family: hanken_grotesk;
+    margin-bottom: 20px ;
+}
+#info{
+    width: 50px;
 }
 
 /* Styling for the Cover image section */

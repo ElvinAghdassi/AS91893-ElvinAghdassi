@@ -400,6 +400,7 @@ nav ul li a:hover {
 
 #map{
     margin-top: -16px;
+    height: 1155px;
 }
 #map img{
     width: 1200px;
@@ -453,8 +454,8 @@ nav ul li a:hover {
 
 #devonport_marker{
     position: relative;
-    top: -650px;
-    left: 625px;
+    top: -635px;
+    left: 570px;
 }
 
 #harbour_marker{
@@ -465,8 +466,8 @@ nav ul li a:hover {
 
 #waiheke_marker{
     position: relative;
-    top: -610px;
-    left: 960px;
+    top: -700px;
+    left: 850px;
 
 }
 
@@ -478,14 +479,14 @@ nav ul li a:hover {
 
 #point_england_marker{
     position: relative;
-    left: 738px;
-    top: -745px; 
+    left: 585px;
+    top: -535px; 
 }
 
 #mangere_marker{
     position: relative;
-    left: 700px;
-    top: -850px;
+    left: 433px;
+    top: -445px;
 }
 /* Styling for the footer */
 footer{

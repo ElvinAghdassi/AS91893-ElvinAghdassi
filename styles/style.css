@@ -439,7 +439,6 @@ nav ul li a:hover {
     width: 20px;
     z-index: 1;
 }
-
 #murrays_marker{
     position: relative;
     top: -820px;
@@ -488,7 +487,10 @@ nav ul li a:hover {
     left: 433px;
     top: -445px;
 }
+
+
 /* Styling for the footer */
+
 footer{
     background-color: #1B4965;
     height: 200px;

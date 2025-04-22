@@ -434,7 +434,7 @@ nav ul li a:hover {
 }
 
 /* Styling for the Jquery modal window */
-.popupContent a.btn{
+.closeModal{
     border: none;
     background-color: #0077B6;
     color: #F8F1E5;
@@ -447,7 +447,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.popupContent a.btn:hover{
+.closeModal:hover{
     text-decoration: underline;
     scale: 105%;
 }

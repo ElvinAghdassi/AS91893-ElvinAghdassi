@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.open').click(function(){
+                $('.popupOverlay, .popupContent').addClass('active');
+            });
+            $('.close, .popupOverlay').click(function(){
+                $('.popupOverlay, .popupContent').removeClass('active');
+            });
+        });
+    </script>
     <title>Auckland Angler</title>
 </head>
 <body>
@@ -29,8 +40,57 @@
 
             <!-- Pinpoints on the Map for each location-->
              <div id="pinpoints">
-                <img src="resources/images/pinpoint.png" alt="pinpoint" id="murrays_marker">
-                <img src="resources/images/pinpoint.png" alt="pinpoint" id="birkenhead_marker">
+                <div id="murrays_pin">
+                    <div class="popupOverlay">
+                        <div class="popupContent">
+                            <h2>Murrays Bay Wharf</h2>
+                            <p>Murrays Bay Wharf is located in the suburb of Murrays Bay on Auckland's North Shore, New Zealand. The wharf is situated at the eastern end of Murrays Bay Beach, accessible via Beach Road. It's opposite to the Murrays Bay Sailing Club at 511 Beach Road, Auckland 0630.</p>
+                            <a href="#" class="btn close">Exit</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn open">
+                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="murrays_marker">
+                    </a>
+                </div>
+                <div id="birkenhead_pin">
+                    <div class="popupOverlay">
+                        <div class="popupContent">
+                            <h2>Birkenhead Wharf</h2>
+                        </div>
+                    </div>
+                    <img src="resources/images/pinpoint.png" alt="pinpoint" id="birkenhead_marker">
+                </div>
+    
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Devonport Wharf</h2>
+                    </div>
+                </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Auckland Harbour Bridge</h2> 
+                    </div>
+                </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Waiheke Island</h2>  
+                    </div>
+                </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Orakei Wharf</h2>
+                    </div>
+                </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Point England Reserve</h2>
+                    </div>
+                </div>
+                <div class="popupOverlay">
+                    <div class="popupContent">
+                        <h2>Mangere Bridge</h2>
+                    </div>
+                </div>
                 <img src="resources/images/pinpoint.png" alt="pinpoint" id="devonport_marker">
                 <img src="resources/images/pinpoint.png" alt="pinpoint" id="harbour_marker">
                 <img src="resources/images/pinpoint.png" alt="pinpoint" id="waiheke_marker">

@@ -286,6 +286,7 @@ nav ul li a:hover {
     background-color: #F4EDE8;
     padding: 10px;
     border-radius: 10px;
+    color: #1C2E4A;
 }
 
 .findonmap_button{
@@ -438,14 +439,16 @@ nav ul li a:hover {
 .closeModal{
     border: none;
     background-color: #0077B6;
-    color: #F8F1E5;
     font-size: 18pt;
     border-radius: 5px;
     font-family: hanken_grotesk;
     box-shadow: rgba(24, 16, 16, 0.3) 1.95px 1.95px 2.6px;
     text-decoration: none;
     margin-top: 10px;
+    width: 100px;
+    color: #F8F1E5;
 }
+
 
 .closeModal:hover{
     text-decoration: underline;
@@ -471,6 +474,15 @@ nav ul li a:hover {
     width: 500px;
     margin-left: 275px;
     text-align: center;
+}
+
+.popupContent h2{
+    color: #1B4965;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.popup_text{
+    color: #1B4965;
 }
 
 .popupOverlay.active, .popupContent.active {
@@ -510,28 +522,28 @@ nav ul li a:hover {
 }
 
 #waiheke_marker{
-    position: relative;
-    top: -980px;
-    left: 900px;
+    position: absolute;
+    margin-left: 950px;
+    margin-top: -940px;
 
 }
 
 #orakei_marker{
-    position: relative;
-    left: 540px;
-    top: -690px;
+    position: absolute;
+    margin-left: 647px;
+    margin-top: -910px;
 }
 
 #point_england_marker{
-    position: relative;
-    left: 665px;
-    top: -535px; 
+    position: absolute;
+    margin-left: 730px;
+    margin-top: -887px;
 }
 
 #mangere_marker{
-    position: relative;
-    left: 413px;
-    top: -445px;
+    position: absolute;
+    margin-left: 601px;
+    margin-top: -845px;
 }
 
 

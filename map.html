@@ -7,11 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.open').click(function(){
-                $('.popupOverlay, .popupContent').addClass('active');
-            });
-            $('.close, .popupOverlay').click(function(){
+            $('.open').click(function(e){
+                e.preventDefault();
                 $('.popupOverlay, .popupContent').removeClass('active');
+                $(this).siblings('.popupOverlay').addClass('active');
+                $(this).siblings('.popupOverlay').find('.popupContent').addClass('active');
+            });
+
+            $(document).on('click', '.closeModal, .popupOverlay', function(e){
+                if ($(e.target).is('.popupOverlay') || $(e.target).closest('.closeModal').length) {
+                    $(this).closest('.popupOverlay').removeClass('active');
+                    $(this).closest('.popupOverlay').find('.popupContent').removeClass('active');
+                }
             });
         });
     </script>
@@ -21,7 +28,7 @@
     <div id="page_container">
         <header>
             <div id="logo">
-                    <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>
             </div>
             <nav>
                 <ul>
@@ -39,127 +46,123 @@
             <img src="resources/images/lds-nz-10m-satellite-imagery-2021-2022-JPEG 2/nz-10m-satellite-imagery-2021-2022.jpg" alt="map">
 
             <!-- Pinpoints on the Map for each location-->
-             <div id="pinpoints">
+            <div id="pinpoints">
+                
+                <!-- Murrays Bay -->
                 <div id="murrays_pin">
                     <article class="popupOverlay">
                         <div class="popupContent">
                             <h2>Murrays Bay Wharf</h2>
                             <p>Murrays Bay Wharf is located in the suburb of Murrays Bay on Auckland's North Shore, New Zealand. The wharf is situated at the eastern end of Murrays Bay Beach, accessible via Beach Road. It's opposite to the Murrays Bay Sailing Club at 511 Beach Road, Auckland 0630.</p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
+                            <button class="closeModal"><p>Close</p></button>
                         </div>
                     </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="murrays_marker">
                     </a>
                 </div>
+
+                <!-- Birkenhead -->
                 <div id="birkenhead_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Birkenhead Wharf</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="birkenhead_marker">
                     </a>
                 </div>
+
+                <!-- Devonport -->
                 <div id="devonport_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Devonport Wharf</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="devonport_marker">
                     </a>
                 </div>
+
+                <!-- Harbour -->
                 <div id="harbour_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
-                            <h2>Auckland Harbour Bridge</h2> 
+                    <article class="popupOverlay">
+                        <div class="popupContent">
+                            <h2>Auckland Harbour Bridge</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="harbour_marker">
                     </a>
-                    
                 </div>
+
+                <!-- Waiheke -->
                 <div id="waiheke_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Waiheke Island</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>  
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>  
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="waiheke_marker">
                     </a>
-                    
                 </div>
+
+                <!-- Orakei -->
                 <div id="orakei_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Orakei Wharf</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="orakei_marker">
                     </a>
-                    
                 </div>
+
+                <!-- Point England -->
                 <div id="point_england_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Point England Reserve</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="point_england_marker">
                     </a>
-                    
                 </div>
+
+                <!-- Mangere -->
                 <div id="mangere_pin">
-                    <div class="popupOverlay">
-                        <artice class="popupContent">
+                    <article class="popupOverlay">
+                        <div class="popupContent">
                             <h2>Mangere Bridge</h2>
                             <p></p>
-                            <button class="closeModal">
-                                <p>Close</p>
-                            </button>
-                        </artice>
-                    </div>
+                            <button class="closeModal"><p>Close</p></button>
+                        </div>
+                    </article>
                     <a href="#" class="btn open">
                         <img src="resources/images/pinpoint.png" alt="pinpoint" id="mangere_marker">
                     </a>
-                    
                 </div>  
-            </div>
 
+            </div>
         </section>
+
         <footer>
             <div id="footer_logo">
                 <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>    
@@ -175,8 +178,7 @@
             <div id="contact">
                 <h1>Contact Us</h1>
                 <ul>
-                    <li>Email : ea22360@my.westlake.school.nz</li>
-                </br>
+                    <li>Email : ea22360@my.westlake.school.nz</li><br>
                     <li>Phone : 020 4018 2797</li>
                 </ul>
             </div>

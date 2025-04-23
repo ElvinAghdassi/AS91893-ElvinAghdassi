@@ -88,7 +88,7 @@ nav ul li a:hover {
 #index_banner{
     text-align: center;
     margin-left: 50px;
-    padding-top: 50px;
+    margin-top: 50px;
     position: absolute;
     color: #F1EAE0;
     z-index: 1;
@@ -401,6 +401,7 @@ nav ul li a:hover {
 #map{
     margin-top: -16px;
     height: 1155px;
+    position: relative;
 }
 #map img{
     width: 1200px;
@@ -441,7 +442,6 @@ nav ul li a:hover {
     font-size: 18pt;
     border-radius: 5px;
     font-family: hanken_grotesk;
-    padding: 5px 10px 5px 10px;
     box-shadow: rgba(24, 16, 16, 0.3) 1.95px 1.95px 2.6px;
     text-decoration: none;
     margin-top: 10px;
@@ -453,8 +453,6 @@ nav ul li a:hover {
 }
 
 .popupOverlay{
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid 2px #666;
     padding: 25px;
     margin: auto;
     visibility: hidden;
@@ -463,7 +461,6 @@ nav ul li a:hover {
 
 .popupContent{
     background-color: #ffffff;
-    border: solid 2px #666;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     padding: 50px;
@@ -489,51 +486,51 @@ nav ul li a:hover {
     scale: 110%;
 }
 #murrays_marker{
-    position: relative;
-    top: -820px;
-    left: 555px ;
+    position: absolute;
+    margin-left: 555px;
+    margin-top: -875px;
 }
 
 #birkenhead_marker{
-    position: relative;
-    top: -655px;
-    left: 500px;
+    position: absolute;
+    margin-left: 522px ;
+    margin-top: -755px;
 }
 
 #devonport_marker{
-    position: relative;
-    top: -635px;
-    left: 570px;
+    position: absolute;
+    margin-left: 615px;
+    margin-top: -785px;
 }
 
 #harbour_marker{
-    position: relative;
-    left: 455px;
-    top: -620px;
+    position: absolute;
+    margin-left: 530px;
+    margin-top: -820px;
 }
 
 #waiheke_marker{
     position: relative;
-    top: -700px;
-    left: 850px;
+    top: -980px;
+    left: 900px;
 
 }
 
 #orakei_marker{
     position: relative;
     left: 540px;
-    top: -610px;
+    top: -690px;
 }
 
 #point_england_marker{
     position: relative;
-    left: 585px;
+    left: 665px;
     top: -535px; 
 }
 
 #mangere_marker{
     position: relative;
-    left: 433px;
+    left: 413px;
     top: -445px;
 }
 

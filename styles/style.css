@@ -271,6 +271,16 @@ nav ul li a:hover {
     height: 3000px;
 }
 
+.desc_img {
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.desc_img:hover{
+    scale: 101%;
+}
 
 .desc_header{
     color: #1B4965;

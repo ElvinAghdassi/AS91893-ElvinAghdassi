@@ -561,17 +561,20 @@ nav ul li a:hover {
 
 footer{
     background-color: #1B4965;
-    height: 200px;
+    height: 150px;
     color: #F8F1E5 ;
+}
+footer h1{
+    font-size: 16pt;
 }
 
 #footer_logo{
     float: left;
-    padding: 32px 0px 0px 50px;
+    margin: 25px 0px 0px 60px;
 }
 
 #footer_logo img {
-    width: 200px;
+    width: 150px;
 }
 
 #footer_logo img:hover{
@@ -580,28 +583,23 @@ footer{
 
 #navigation{
     float: left;
-    padding-left: 200px;
-}
-
-#navigation h1{
-    margin-bottom: 0px;
-
+    margin-left: 200px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 #navigation ul {
     list-style-type: none;
     overflow: hidden;
-    text-align: center;
-    display: inline;
 }
 
 #navigation li a {
     color: #F8F1E5;
     font-family: crimsontext;
-    font-size: 18pt;
+    font-size: 14pt;
     text-decoration: none;
+    margin-left: -40px;
 }
-
 #navigation li a:hover {
     text-decoration: 2px underline;
     text-underline-offset: 3px;
@@ -609,8 +607,9 @@ footer{
 
 #contact{
     float: left;
-    padding-left: 150px;
+    margin-left: 150px;
     text-align: center;
+    margin-top: 5px;
 }
 
 #contact ul{
@@ -618,4 +617,5 @@ footer{
     list-style-type: none;
     overflow: hidden;
 }
+
 

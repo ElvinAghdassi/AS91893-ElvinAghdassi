@@ -20,8 +20,8 @@
 #logo {
     float: left;
     width: 130px;
-    padding-left: 75px;
-    padding-top: 10px;
+    margin-left: 160px;
+    margin-top: 10px;
 }
 
 #logo img {
@@ -87,8 +87,8 @@ nav ul li a:hover {
 
 #index_banner{
     text-align: center;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 70px;
+    margin-top: 70px;
     position: absolute;
     color: #F1EAE0;
     z-index: 1;
@@ -118,8 +118,10 @@ nav ul li a:hover {
 }
 
 #about_us h1{
-    font-size: 22pt;
+    font-size: 26pt;
     margin-bottom: 20px;
+    padding: 10px;
+    margin-top: -2px;
     font-family: hanken_grotesk;
     text-decoration: 2px underline;
     text-underline-offset: 5px;
@@ -211,8 +213,8 @@ nav ul li a:hover {
 }
 
 #auckland_harbour h2{
-    margin-top: 0px;
-    margin-bottom: 64px;
+    margin-top: 20px;
+    margin-bottom: 44px;
 }
 
 .cover_header{
@@ -278,7 +280,7 @@ nav ul li a:hover {
 /* Styling for the descriptive boxes*/
 
 #descriptive_boxes{
-    height: 3000px;
+    height: 3250px;
 }
 
 .desc_img {
@@ -301,12 +303,13 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 .description{
-    width: 250px;
+    width: 260px;
     margin: -10px auto;
     background-color: #F8F1E5;
     padding: 10px;
     border-radius: 10px;
     color: #1C2E4A;
+    font-size: 14pt;
 }
 
 .findonmap_button{
@@ -318,7 +321,7 @@ nav ul li a:hover {
     font-family: hanken_grotesk;
     padding: 4px 10px 4px 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
-    margin-top: 25px;
+    margin-top: 40px;
     font: bold;
 }
 
@@ -334,8 +337,8 @@ nav ul li a:hover {
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    height: 625px;
-    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    height: 675px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3.1px 8px 6px;
     margin-top: 75px;
 }
 #waiheke_box, #auckland_box, #birkenhead_box, #mangere_box {
@@ -345,8 +348,8 @@ nav ul li a:hover {
     width: 300px;
     margin: 75px 0px 50px 200px;
     border-radius: 10px;
-    height: 625px;
-    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
+    height: 675px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3.1px 8px 6px;
 }
 
 
@@ -354,20 +357,11 @@ nav ul li a:hover {
 
 #map{
     margin-top: -16px;
-    height: 1155px;
+    height: 1200px;
     position: relative;
 }
 #map img{
     width: 1200px;
-}
-#locations_banner_block{
-    width: 1200px;
-    background-color: black;
-    color: #FFE5B4;
-    margin-top: -20px;
-    font-family: crimsontext;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2.6px;
-    height: 690px;
 }
 
 
@@ -472,51 +466,51 @@ nav ul li a:hover {
 }
 #murrays_marker{
     position: absolute;
-    margin-left: 555px;
-    margin-top: -875px;
+    margin-left: 445px;
+    margin-top: -990px;
 }
 
 #birkenhead_marker{
     position: absolute;
-    margin-left: 522px ;
-    margin-top: -755px;
+    margin-left: 395px ;
+    margin-top: -800px;
 }
 
 #devonport_marker{
-    position: absolute;
-    margin-left: 615px;
-    margin-top: -785px;
-}
-
-#harbour_marker{
     position: absolute;
     margin-left: 530px;
     margin-top: -820px;
 }
 
+#harbour_marker{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -850px;
+}
+
 #waiheke_marker{
     position: absolute;
-    margin-left: 950px;
-    margin-top: -940px;
+    margin-left: 1000px;
+    margin-top: -990px;
 
 }
 
 #orakei_marker{
     position: absolute;
-    margin-left: 647px;
-    margin-top: -910px;
+    margin-left: 570px;
+    margin-top: -930px;
 }
 
 #point_england_marker{
     position: absolute;
-    margin-left: 730px;
-    margin-top: -887px;
+    margin-left: 690px;
+    margin-top: -880px;
 }
 
 #mangere_marker{
     position: absolute;
-    margin-left: 601px;
-    margin-top: -845px;
+    margin-left: 505px;
+    margin-top: -795px;
 }
 
 

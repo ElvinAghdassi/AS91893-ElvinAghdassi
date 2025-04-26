@@ -196,9 +196,9 @@ nav ul li a:hover {
     height: 480px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 4px 3px;
 }
-
 #murrays_bay h2{
     margin-top: 0px;
+    margin-bottom: 12px;
 }
 
 #auckland_harbour {
@@ -221,21 +221,28 @@ nav ul li a:hover {
     color: #1B4965;
     font-size: 24pt;
 }
+.read_more_button{
+    border: none;
+    background-color: #D6E6F2;
+    
+
+}
 .read_more_button {
     border: none;
     background-color: #0077B6;
     color: #F8F1E5;
-    font-size: 18pt;
+    font-size: 20pt;
     border-radius: 5px;
     font-family: hanken_grotesk;
     padding: 2px 5px 2px 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
     width: 140px;
+    text-decoration: none;
 }
 
 .read_more_button:hover {
-    text-decoration: underline;
-    scale: 105%;
+    font-size: 22pt;
+    text-decoration: #F8F1E5 underline;
 }
 
 /* Styling for the Locations Page */
@@ -302,6 +309,9 @@ nav ul li a:hover {
     margin: auto;
     margin-bottom: 20px;
 }
+#orakei_subhead{
+    margin-top: -20px;
+}
 .description{
     width: 260px;
     margin: -10px auto;
@@ -310,6 +320,7 @@ nav ul li a:hover {
     border-radius: 10px;
     color: #1C2E4A;
     font-size: 14pt;
+    margin-bottom: 40px;
 }
 
 .findonmap_button{
@@ -321,13 +332,13 @@ nav ul li a:hover {
     font-family: hanken_grotesk;
     padding: 4px 10px 4px 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
-    margin-top: 40px;
-    font: bold;
+    margin-bottom: -40px;
+    text-decoration: none;
 }
 
 .findonmap_button:hover{
     text-decoration: underline;
-    scale: 105%;
+    font-size: 22pt;
 }
 
 #orakei_box, #murrays_box, #devonport_box, #point_england_box{
@@ -379,6 +390,8 @@ nav ul li a:hover {
     color: #C89F74;
     padding: 20px;
     border-radius: 10px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 
 }
 
@@ -520,6 +533,7 @@ footer{
     background-color: #1B4965;
     height: 150px;
     color: #F8F1E5 ;
+    z-index: 3;
 }
 footer h1{
     font-size: 16pt;
@@ -575,4 +589,7 @@ footer h1{
     overflow: hidden;
 }
 
+#contact ul li{
+    margin-bottom: 20px;
+}
 

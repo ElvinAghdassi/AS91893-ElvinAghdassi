@@ -418,7 +418,7 @@ nav ul li a:hover {
 .popupOverlay{
     padding: 25px;
     margin: auto;
-    visibility: hidden;
+    display: none;
 
 }
 
@@ -429,7 +429,7 @@ nav ul li a:hover {
     padding: 50px;
     position: absolute;
     margin-top: -1000px;
-    visibility: hidden;
+    display: block;
     z-index: 2;
     width: 500px;
     margin-left: 275px;
@@ -455,7 +455,7 @@ nav ul li a:hover {
 }
 
 .popupOverlay.active, .popupContent.active {
-    visibility: visible;
+    display: block;
 }
 /* Styling for the pinpoints on the map*/
 
@@ -480,50 +480,50 @@ nav ul li a:hover {
 #murrays_marker{
     position: absolute;
     margin-left: 445px;
-    margin-top: -990px;
+    margin-top: -940px;
 }
 
 #birkenhead_marker{
     position: absolute;
     margin-left: 395px ;
-    margin-top: -800px;
+    margin-top: -700px;
 }
 
 #devonport_marker{
     position: absolute;
     margin-left: 530px;
-    margin-top: -820px;
+    margin-top: -670px;
 }
 
 #harbour_marker{
     position: absolute;
     margin-left: 400px;
-    margin-top: -850px;
+    margin-top: -650px;
 }
 
 #waiheke_marker{
     position: absolute;
     margin-left: 1000px;
-    margin-top: -990px;
+    margin-top: -740px;
 
 }
 
 #orakei_marker{
     position: absolute;
     margin-left: 570px;
-    margin-top: -930px;
+    margin-top: -635px;
 }
 
 #point_england_marker{
     position: absolute;
     margin-left: 690px;
-    margin-top: -880px;
+    margin-top: -530px;
 }
 
 #mangere_marker{
     position: absolute;
     margin-left: 505px;
-    margin-top: -795px;
+    margin-top: -400px;
 }
 
 

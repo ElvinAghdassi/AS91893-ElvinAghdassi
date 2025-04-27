@@ -1,18 +1,26 @@
 <!DOCTYPE html> 
 <html lang="en">
    <head>
+      <!-- Basic page setup and external resources -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link to local stylesheet -->
       <link rel="stylesheet" href="styles/style.css">
+      <!-- Fancybox library for image galleries -->
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>   
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
       <title>Auckland Angler</title>
    </head>
    <body>
       <div id="page_container">
+         <!-- Header section with logo and navigation menu -->
          <header>
-            <div id="logo"> <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a> </div>
+            <div id="logo">
+               <!-- Logo linking back to homepage -->
+               <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a> 
+            </div>
             <nav>
+               <!-- Main navigation links -->
                <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="locations.html" id="current">Locations</a></li>
@@ -20,65 +28,109 @@
                </ul>
             </nav>
          </header>
+
+         <!-- Banner section for Locations page -->
          <section id="locations_banner_block">
             <div id="locations_banner">
                <h1>Locations</h1>
             </div>
+            <!-- Banner image -->
             <img src="resources/images/locations_banner_img.jpg" alt="locations_banner_img"> 
          </section>
+
+         <!-- Section containing individual location articles -->
          <section id="descriptive_boxes">
+            <!-- Each article showing a different fishing location -->
+            
+            <!-- Orakei Wharf -->
             <article id="orakei_box">
-               <a data-fancybox="locations_gallery" data-caption="Orakei Wharf" href="resources/images/orakei_wharf.jpg" > <img src="resources/images/orakei_wharf.jpg" alt="Gallery Image" class="desc_img"/></a> 
+               <!-- Fancybox linked image -->
+               <a data-fancybox="locations_gallery" data-caption="Orakei Wharf" href="resources/images/orakei_wharf.jpg">
+                  <img src="resources/images/orakei_wharf.jpg" alt="Gallery Image" class="desc_img"/>
+               </a> 
                <h2 class="desc_header">Ōrākei</h2>
                <h2 class="desc_header" id="orakei_subhead">Wharf</h2>
-               <p class="description"> Ōrākei Wharf, close to the city,  offers easy access and scenic views of the Waitemata Harbour. Snapper and kahawai are commonly caught here, making it ideal for casual and beginner anglers. Tidy and well-maintained, it's a great option for urban fishing.</p>
+               <p class="description">Ōrākei Wharf, close to the city,  offers easy access and scenic views of the Waitemata Harbour. Snapper and kahawai are commonly caught here, making it ideal for casual and beginner anglers. Tidy and well-maintained, it's a great option for urban fishing.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Waiheke Island -->
             <article id="waiheke_box">
-               <a data-fancybox="locations_gallery" data-caption="Waiheke Island" href="resources/images/waiheke_island.jpg"> <img src="resources/images/waiheke_island.jpg" alt="Gallery Image" class="desc_img"/></a> 
+               <a data-fancybox="locations_gallery" data-caption="Waiheke Island" href="resources/images/waiheke_island.jpg">
+                  <img src="resources/images/waiheke_island.jpg" alt="Gallery Image" class="desc_img"/>
+               </a> 
                <h2 class="desc_header">Waiheke Island</h2>
                <p class="description">Waiheke Island offers a more remote and peaceful fishing experience. Its rocky shorelines and wharves attract snapper, John Dory, and kingfish. Be sure to follow local rules as it is a special environment worth preserving for future generations.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Murrays Bay Wharf -->
             <article id="murrays_box">
-               <a data-fancybox="locations_gallery" data-caption="Murrays Bay Wharf" href="resources/images/murrays_bay.jpg"> <img src="resources/images/murrays_bay.jpg" alt="Gallery Image" class="desc_img"/></a> 
+               <a data-fancybox="locations_gallery" data-caption="Murrays Bay Wharf" href="resources/images/murrays_bay.jpg">
+                  <img src="resources/images/murrays_bay.jpg" alt="Gallery Image" class="desc_img"/>
+               </a> 
                <h2 class="desc_header">Murrays Bay Wharf</h2>
                <p class="description">Located along the North Shore, Murrays Bay Wharf is known for calm waters and a relaxed vibe. It's a great spot for catching sprats, mackerel, and trevally. A great location that supports responsible shoreline fishing.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Auckland Harbour -->
             <article id="auckland_box">
-               <a data-fancybox="locations_gallery" data-caption="Auckland Harbour Bridge" href="resources/images/auckland_harbour.png"> <img src="resources/images/auckland_harbour.png" alt="Gallery Image" class="desc_img" /></a> 
+               <a data-fancybox="locations_gallery" data-caption="Auckland Harbour Bridge" href="resources/images/auckland_harbour.png">
+                  <img src="resources/images/auckland_harbour.png" alt="Gallery Image" class="desc_img" />
+               </a> 
                <h2 class="desc_header">Auckland Harbour</h2>
                <p class="description">At the city's waterfront, Auckland Harbour offers diverse fishing opportunities. From snapper to kingfish, the variety is strong, but so are the regulations. Stick to legal zones and enjoy an iconic fishing experience.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Devonport Wharf -->
             <article id="devonport_box">
-               <a data-fancybox="locations_gallery" data-caption="Devonport Wharf" href="resources/images/devonport_wharf.jpg"> <img src="resources/images/devonport_wharf.jpg" alt="Gallery Image" class="desc_img" /></a> 
+               <a data-fancybox="locations_gallery" data-caption="Devonport Wharf" href="resources/images/devonport_wharf.jpg">
+                  <img src="resources/images/devonport_wharf.jpg" alt="Gallery Image" class="desc_img" />
+               </a> 
                <h2 class="desc_header">Devonport Wharf</h2>
                <p class="description">With stunning views of the harbour and Rangitoto, Devonport Wharf is an amazing and accessible spot. It's ideal for catching small fish like yellowtail and jack mackerel, perfect for beginners learning to fish.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Birkenhead Wharf -->
             <article id="birkenhead_box">
-               <a data-fancybox="locations_gallery" data-caption="Birkenhead Wharf" href="resources/images/birkenhead_wharf.jpg"> <img src="resources/images/birkenhead_wharf.jpg" alt="Gallery Image" class="desc_img" /></a> 
+               <a data-fancybox="locations_gallery" data-caption="Birkenhead Wharf" href="resources/images/birkenhead_wharf.jpg">
+                  <img src="resources/images/birkenhead_wharf.jpg" alt="Gallery Image" class="desc_img" />
+               </a> 
                <h2 class="desc_header">Birkenhead Wharf</h2>
                <p class="description">Conveniently located with ferry access, Birkenhead Wharf is a local favourite for evening fishing. Anglers often reel in snapper and baitfish such as pilchards on this wharf. A reliable legal spot just minutes from central Auckland.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Point England Reserve -->
             <article id="point_england_box">
-               <a data-fancybox="locations_gallery" data-caption="Point England Reserve" href="resources/images/point_england.jpg"> <img src="resources/images/point_england.jpg" alt="Gallery Image" class="desc_img" /></a> 
+               <a data-fancybox="locations_gallery" data-caption="Point England Reserve" href="resources/images/point_england.jpg">
+                  <img src="resources/images/point_england.jpg" alt="Gallery Image" class="desc_img" />
+               </a> 
                <h2 class="desc_header">Point England Reserve</h2>
                <p class="description">Set against grassy reserves and open space, Point England is perfect for land-based fishing. Kahawai and mullet are frequent catches here. This east-side gem supports community-led efforts to fish legally and sustainably.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
+
+            <!-- Mangere Bridge -->
             <article id="mangere_box">
-               <a data-fancybox="locations_gallery" data-caption="Mangere Bridge" href="resources/images/mangere_bridge.jpg"> <img src="resources/images/mangere_bridge.jpg" alt="Gallery Image" class="desc_img"/></a> 
+               <a data-fancybox="locations_gallery" data-caption="Mangere Bridge" href="resources/images/mangere_bridge.jpg">
+                  <img src="resources/images/mangere_bridge.jpg" alt="Gallery Image" class="desc_img"/>
+               </a> 
                <h2 class="desc_header">Māngere Bridge</h2>
                <p class="description">Māngere Bridge offers a blend of strong tidal flows and fish-rich waters. It's a hot spot for kahawai and eels, with plenty of space for land-based fishing. A southern location is known for its community and conservation focus.</p>
                <a href="map.html" class="findonmap_button">Find on Map</a> 
             </article>
          </section>
+
+         <!-- Footer section with navigation and contact info -->
          <footer>
-            <div id="footer_logo"> <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>     </div>
+            <div id="footer_logo">
+               <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>     
+            </div>
+
             <div id="navigation">
                <h1>Navigation</h1>
                <ul>
@@ -87,6 +139,7 @@
                   <li><a href="map.html">Map</a></li>
                </ul>
             </div>
+
             <div id="contact">
                <h1>Contact Us</h1>
                <ul>
@@ -96,6 +149,10 @@
             </div>
          </footer>
       </div>
-      <script> Fancybox.bind("[data-fancybox='locations_gallery']", {}); </script> 
+
+      <!-- Fancybox initialization script -->
+      <script> 
+         Fancybox.bind("[data-fancybox='locations_gallery']", {}); 
+      </script> 
    </body>
 </html>

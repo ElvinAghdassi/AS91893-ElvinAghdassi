@@ -1,201 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.openModal').click(function(e){
-                e.preventDefault();
-                $('.popupOverlay, .popupContent').removeClass('active');
-                $(this).siblings('.popupOverlay').addClass('active');
-                $(this).siblings('.popupOverlay').find('.popupContent').addClass('active');
-            });
-
-            $(document).on('click', '.closeModal, .popupOverlay', function(e){
-                if ($(e.target).is('.popupOverlay') || $(e.target).closest('.closeModal').length) {
-                    $(this).closest('.popupOverlay').removeClass('active');
-                    $(this).closest('.popupOverlay').find('.popupContent').removeClass('active');
-                }
-            });
-        });
-    </script>
-    
-    <title>Auckland Angler</title>
-</head>
-<body>
-    <div id="page_container">
-        <header>
+   <head>
+    <!-- Metadata and resource linking -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/style.css">
+      <!-- Load jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      
+       <!-- JavaScript for handling modal (popup) behavior -->
+      <script>
+         $(document).ready(function(){
+            // When any element with 'openModal' class is clicked
+             $('.openModal').click(function(e){
+                 e.preventDefault(); // Prevent default link behavior
+                 $('.popupOverlay, .popupContent').removeClass('active'); // Hide any currently active modals
+                 $(this).siblings('.popupOverlay').addClass('active'); // Activate the overlay related to the clicked pinpoint
+                 $(this).siblings('.popupOverlay').find('.popupContent').addClass('active'); // Display popup content inside the overlay
+         });
+            // Close the modal when clicking either the overlay background or the close button
+             $(document).on('click', '.closeModal, .popupOverlay', function(e){
+                 if ($(e.target).is('.popupOverlay') || $(e.target).closest('.closeModal').length) {
+                     $(this).closest('.popupOverlay').removeClass('active'); // Remove active class from the overlay
+                     $(this).closest('.popupOverlay').find('.popupContent').removeClass('active'); // Hide the popup content
+         }
+         });
+         });
+      </script>
+      <title>Auckland Angler</title>
+   </head>
+   <body>
+      <div id="page_container">
+        <!-- Page Header -->
+         <header>
             <div id="logo">
-                <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>
+               <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="map.html" id="current">Map</a></li>
-                </ul>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="locations.html">Locations</a></li>
+                  <li><a href="map.html" id="current">Map</a></li>
+               </ul>
             </nav>
-        </header>
-       
-        <section id="map">
+         </header>
+         <!-- Map Section -->
+         <section id="map">
             <div id="map_banner">
-                <h1>Auckland Map</h1>
+               <h1>Auckland Map</h1>
             </div>
-            <img src="resources/images/lds-nz-10m-satellite-imagery-2021-2022-JPEG 2/nz-10m-satellite-imagery-2021-2022(2).jpg" alt="map">
-
+            <img src="resources/images/Satellite_imagery/map.jpg" alt="map">
             <!-- Pinpoints on the Map for each location-->
             <div id="pinpoints">
-                
-                <!-- Murrays Bay -->
-                <div id="murrays_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Murrays Bay Wharf</h2>
-                            <p class="popup_text">Murrays Bay Wharf is located in the suburb of Murrays Bay on Auckland's North Shore, New Zealand. The wharf is situated at the eastern end of Murrays Bay Beach, accessible via Beach Road. It's opposite to the Murrays Bay Sailing Club at 511 Beach Road, Auckland 0630.</p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 405px; margin-top: -1015px;">Murrays Bay</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="murrays_marker">
-                    </a>
-                </div>
-
-                <!-- Birkenhead -->
-                <div id="birkenhead_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Birkenhead Wharf</h2>
-                            <p class="popup_text">Birkenhead Wharf is located at 1 Hinemoa Street, Birkenhead, Auckland 0626, New Zealand. Situated on Auckland's North Shore, it serves as a ferry terminal connecting the suburb of Birkenhead to downtown Auckland via the Waitematā Harbour.</p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 360px; margin-top: -825px;">Birkenhead</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="birkenhead_marker">
-                    </a>
-                </div>
-
-                <!-- Devonport -->
-                <div id="devonport_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Devonport Wharf</h2>
-                            <p class="popup_text">Devonport Wharf is located at Queens Parade, Devonport, Auckland 0624, New Zealand. Situated on Auckland's North Shore, it serves as a historic ferry terminal connecting the seaside village of Devonport to downtown Auckland via the Waitematā Harbour.
-                            </p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 498px; margin-top: -845px;">Devonport</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="devonport_marker">
-                    </a>
-                </div>
-
-                <!-- Harbour -->
-                <div id="harbour_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Auckland Harbour Bridge</h2>
-                            <p class="popup_text">The Auckland Harbour Bridge fishing spot (western side) is located near Westhaven Drive, St Marys Bay, Auckland 1011, New Zealand. Situated on the western side of the Harbour Bridge, this area is popular for land-based fishing and provides access to Westhaven Marina and the surrounding coastal walkway.
-                            </p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 375px; margin-top: -815px; width: 65px;">Auckland Harbour Bridge</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="harbour_marker">
-                    </a>
-                </div>
-
-                <!-- Waiheke -->
-                <div id="waiheke_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Waiheke Island</h2>
-                            <p class="popup_text">Waiheke Island is located in the Hauraki Gulf, approximately 21.5 kilometers northeast of Auckland CBD, New Zealand. Accessible via ferry from downtown Auckland, the island is known for its vineyards, beaches, art scene, and relaxed coastal lifestyle.</p>
-                            <button class="closeModal"><p>Close</p></button>  
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 950px; margin-top: -1020px;">Waiheke Island</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="waiheke_marker">
-                    </a>
-                </div>
-
-                <!-- Orakei -->
-                <div id="orakei_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Orakei Wharf</h2>
-                            <p class="popup_text">Ōrākei Wharf is located at Tamaki Drive, Ōrākei, Auckland 1071, New Zealand. Positioned at the eastern end of Okahu Bay, the wharf is a popular recreational fishing and sightseeing spot, offering panoramic views across the Waitematā Harbour.</p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 595px; margin-top: -930px;">Orakei</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="orakei_marker">
-                    </a>
-                </div>
-
-                <!-- Point England -->
-                <div id="point_england_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Point England Reserve</h2>
-                            <p class="popup_text">Point England Reserve is located at Point England Road, Glen Innes, Auckland 1072, New Zealand. Situated along the Tamaki River, the reserve features coastal walking trails, open fields, and access to estuarine wildlife and scenic views of the eastern bays.
-                            </p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 715px; margin-top: -885px; width: 100px;">Point England Reserve</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="point_england_marker">
-                    </a>
-                </div>
-
-                <!-- Mangere -->
-                <div id="mangere_pin">
-                    <article class="popupOverlay">
-                        <div class="popupContent">
-                            <h2>Māngere Bridge</h2>
-                            <p class="popup_text">Māngere Bridge is located at Bridge Street, Māngere Bridge, Auckland 2022, New Zealand. Connecting Māngere and Onehunga over the Manukau Harbour, the bridge and its surrounding area are known for walking and cycling paths, as well as proximity to Ambury Regional Park and waterfront fishing spots.</p>
-                            <button class="closeModal"><p>Close</p></button>
-                        </div>
-                    </article>
-                    <div class="marker-label" style="margin-left: 455px; margin-top: -820px;">Mangere Bridge</div>
-                    <a href="#" class="openModal">
-                        <img src="resources/images/pinpoint.png" alt="pinpoint" id="mangere_marker">
-                    </a>
-                </div>  
-
+               <!-- Murrays Bay -->
+               <div id="murrays_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Murrays Bay Wharf</h2>
+                        <p class="popup_text">Murrays Bay Wharf is located in the suburb of Murrays Bay on Auckland's North Shore, New Zealand. The wharf is situated at the eastern end of Murrays Bay Beach, accessible via Beach Road. It's opposite the Murrays Bay Sailing Club at 511 Beach Road, Auckland 0630.</p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 405px; margin-top: -965px;">Murrays Bay</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="murrays_marker">
+                  </a>
+               </div>
+               <!-- Birkenhead -->
+               <div id="birkenhead_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Birkenhead Wharf</h2>
+                        <p class="popup_text">Birkenhead Wharf is at 1 Hinemoa Street, Birkenhead, Auckland 0626, New Zealand. Situated on Auckland's North Shore, it serves as a ferry terminal connecting the suburb of Birkenhead to downtown Auckland via the Waitematā Harbour.</p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 360px; margin-top: -725px;">Birkenhead</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="birkenhead_marker">
+                  </a>
+               </div>
+               <!-- Devonport -->
+               <div id="devonport_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Devonport Wharf</h2>
+                        <p class="popup_text">Devonport Wharf is at Queens Parade, Devonport, Auckland 0624, New Zealand. Situated on Auckland's North Shore, it serves as a historic ferry terminal connecting the seaside village of Devonport to downtown Auckland via the Waitematā Harbour.
+                        </p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 498px; margin-top: -695px;">Devonport</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="devonport_marker">
+                  </a>
+               </div>
+               <!-- Harbour -->
+               <div id="harbour_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Auckland Harbour Bridge</h2>
+                        <p class="popup_text">The Auckland Harbour Bridge fishing spot (western side) is located near Westhaven Drive, St Marys Bay, Auckland 1011, New Zealand. Situated on the western side of the Harbour Bridge, this area is popular for land-based fishing and provides access to Westhaven Marina and the surrounding coastal walkway.
+                        </p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 375px; margin-top: -615px; width: 65px;">Auckland Harbour Bridge</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="harbour_marker">
+                  </a>
+               </div>
+               <!-- Waiheke -->
+               <div id="waiheke_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Waiheke Island</h2>
+                        <p class="popup_text">Waiheke Island is located in the Hauraki Gulf, approximately 21.5 kilometers northeast of Auckland CBD, New Zealand. Accessible via ferry from downtown Auckland, the island is known for its vineyards, beaches, art scene, and relaxed coastal lifestyle.</p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 950px; margin-top: -765px;">Waiheke Island</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="waiheke_marker">
+                  </a>
+               </div>
+               <!-- Orakei -->
+               <div id="orakei_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Orakei Wharf</h2>
+                        <p class="popup_text">Ōrākei Wharf is located at Tamaki Drive, Ōrākei, Auckland 1071, New Zealand. Positioned at the eastern end of Okahu Bay, the wharf is a popular recreational fishing and sightseeing spot, offering panoramic views across the Waitematā Harbour.</p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 595px; margin-top: -635px;">Orakei</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="orakei_marker">
+                  </a>
+               </div>
+               <!-- Point England -->
+               <div id="point_england_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Point England Reserve</h2>
+                        <p class="popup_text">Point England Reserve is located at Point England Road, Glen Innes, Auckland 1072, New Zealand. Situated along the Tamaki River, the reserve features coastal walking trails, open fields, and access to estuarine wildlife and scenic views of the eastern bays.
+                        </p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 715px; margin-top: -535px; width: 100px;">Point England Reserve</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="point_england_marker">
+                  </a>
+               </div>
+               <!-- Mangere -->
+               <div id="mangere_pin">
+                  <article class="popupOverlay">
+                     <div class="popupContent">
+                        <h2>Māngere Bridge</h2>
+                        <p class="popup_text">Māngere Bridge is located at Bridge Street, Māngere Bridge, Auckland 2022, New Zealand. Connecting Māngere and Onehunga over the Manukau Harbour, the bridge and its surrounding area are known for walking and cycling paths, as well as proximity to Ambury Regional Park and waterfront fishing spots.</p>
+                        <button class="closeModal">Close</button>
+                     </div>
+                  </article>
+                  <div class="marker-label" style="margin-left: 455px; margin-top: -425px;">Mangere Bridge</div>
+                  <a href="#" class="openModal">
+                  <img src="resources/images/pinpoint.png" alt="pinpoint" id="mangere_marker">
+                  </a>
+               </div>
             </div>
-        </section>
-
-        <footer>
+         </section>
+         
+         <!-- Page Footer -->
+         <footer>
             <div id="footer_logo">
-                <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>    
+               <a href="index.html"><img src="resources/images/logo.png" alt="logo"></a>    
             </div>
             <div id="navigation">
-                <h1>Navigation</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="locations.html">Location</a></li>
-                    <li><a href="map.html">Map</a></li>
-                </ul>
+               <h1>Navigation</h1>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="locations.html">Location</a></li>
+                  <li><a href="map.html">Map</a></li>
+               </ul>
             </div>
             <div id="contact">
-                <h1>Contact Us</h1>
-                <ul>
-                    <li>Email : ea22360@my.westlake.school.nz</li><br>
-                    <li>Phone : 020 4018 2797</li>
-                </ul>
+               <h1>Contact Us</h1>
+               <ul>
+                  <li>Email : ea22360@my.westlake.school.nz</li>
+                  <li>Phone : 020 4018 2797</li>
+               </ul>
             </div>
-        </footer>
-    </div>
-    
-</body>
+         </footer>
+      </div>
+   </body>
 </html>
